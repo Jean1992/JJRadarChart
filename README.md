@@ -1,4 +1,4 @@
-![image](https://github.com/JeanKit/JJRadarChart/tree/master/JJRadarChartSample/demonstrate.png)
+![demonstrate](http://chuantu.biz/t3/25/1461831714x3738746535.png)
 
 
 
