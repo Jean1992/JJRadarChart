@@ -1,4 +1,6 @@
- ![demonstrate](JJRadarChartSample/demonstrate.png)
+![image](https://github.com/JeanKit/JJRadarChart/tree/master/JJRadarChartSample/demonstrate.png)
+
+
 
 # 一款使用简单快捷的雷达图表控件, 继承于UIControl
 
