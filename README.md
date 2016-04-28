@@ -1,6 +1,4 @@
-![demonstrate](http://chuantu.biz/t3/25/1461831714x3738746535.png)
-
-
+![demonstrate](https://github.com/JeanKit/JJRadarChart/blob/master/demonstrate.png)
 
 # 一款使用简单快捷的雷达图表控件, 继承于UIControl
 
