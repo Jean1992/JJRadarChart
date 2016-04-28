@@ -207,7 +207,8 @@ UIColor* colorRGB(CGFloat r, CGFloat g, CGFloat b) {
     CGFloat x = half(self.frame.size.width);
     CGFloat y = half(self.frame.size.height);
     ctx = UIGraphicsGetCurrentContext();
-    [[UIColor orangeColor] setStroke];
+    [[UIColor orangeColor] setFill];
+    CGContextSetAlpha(ctx, 0.6);
     CGContextSetLineWidth(ctx, 3);
     radius = maxRadius / ((NSNumber *)_arrayMaxCounts.lastObject).integerValue * ((NSNumber *)_arrayRanks.lastObject).integerValue;
     CGContextMoveToPoint(ctx, x + radius, y);
@@ -221,7 +222,7 @@ UIColor* colorRGB(CGFloat r, CGFloat g, CGFloat b) {
         //连线
         CGContextAddLineToPoint(ctx, point.x, point.y);
     }
-    CGContextStrokePath(ctx);
+    CGContextFillPath(ctx);
 }
 - (UIButton *)radarItemAtIndex:(NSInteger)index {
     UIButton *btn = (UIButton *)[self viewWithTag:200 + index];
