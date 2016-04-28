@@ -191,7 +191,7 @@ UIColor* colorRGB(CGFloat r, CGFloat g, CGFloat b) {
         if ([_dataSource respondsToSelector:@selector(radarChart:titleOfItemAtIndex:)]) {
             [btn setTitle:[_dataSource radarChart:self titleOfItemAtIndex:i] forState:UIControlStateNormal];
         }
-        [btn.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        [btn.titleLabel setFont:[UIFont systemFontOfSize:16 weight:UIFontWeightBold]];
         [self addSubview:btn];
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

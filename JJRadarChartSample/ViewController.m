@@ -60,7 +60,7 @@ void msg(NSString *message) {
 }
 - (NSString *)radarChart:(JJRadarChart *)radarChart titleOfItemAtIndex:(NSInteger)index {
     //模拟数据
-    NSArray *arr = @[@"攻击", @"法强", @"护甲", @"魔抗", @"生命", @"法术"];
+    NSArray *arr = @[@"公交", @"食宿", @"日用", @"娱乐", @"购物", @"其他"];
     return arr[index];
 }
 #pragma mark - JJRadarChartDelegate
