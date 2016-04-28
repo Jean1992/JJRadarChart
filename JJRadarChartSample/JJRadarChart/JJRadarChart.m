@@ -207,7 +207,7 @@ UIColor* colorRGB(CGFloat r, CGFloat g, CGFloat b) {
     CGFloat x = half(self.frame.size.width);
     CGFloat y = half(self.frame.size.height);
     ctx = UIGraphicsGetCurrentContext();
-    [[UIColor orangeColor] setFill];
+    [colorRGB(255, 200, 0) setFill];
     CGContextSetAlpha(ctx, 0.6);
     CGContextSetLineWidth(ctx, 3);
     radius = maxRadius / ((NSNumber *)_arrayMaxCounts.lastObject).integerValue * ((NSNumber *)_arrayRanks.lastObject).integerValue;
@@ -223,6 +223,20 @@ UIColor* colorRGB(CGFloat r, CGFloat g, CGFloat b) {
         CGContextAddLineToPoint(ctx, point.x, point.y);
     }
     CGContextFillPath(ctx);
+    
+//    ctx = UIGraphicsGetCurrentContext();
+//    [colorRGB(255, 178, 0) setStroke];
+//    CGContextSetLineWidth(ctx, 3);
+//    radius = maxRadius / ((NSNumber *)_arrayMaxCounts.lastObject).integerValue * ((NSNumber *)_arrayRanks.lastObject).integerValue;
+//    CGContextMoveToPoint(ctx, x + radius, y);
+//    for (NSInteger i = 1; i <= num; i++) {
+//        radius = maxRadius / ((NSNumber *)_arrayMaxCounts[i - 1]).integerValue * ((NSNumber *)_arrayRanks[i - 1]).integerValue;
+//        //计算当前点的位置
+//        CGPoint point = CGPointMake(x + radius * cos( 2 * M_PI * i / num), y + radius * sin(2 * M_PI * i / num));
+//        //连线
+//        CGContextAddLineToPoint(ctx, point.x, point.y);
+//    }
+//    CGContextStrokePath(ctx);
 }
 - (UIButton *)radarItemAtIndex:(NSInteger)index {
     UIButton *btn = (UIButton *)[self viewWithTag:200 + index];
