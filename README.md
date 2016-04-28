@@ -1,8 +1,4 @@
-![](file://localhost/Users/siwei/Library/Caches/TemporaryItems/msoclip/0clip_image002.png)
-
- 
-
- 
+ ![demonstrate](JJRadarChartSample/demonstrate.png)
 
 # 一款使用简单快捷的雷达图表控件, 继承于UIControl
 
@@ -10,7 +6,9 @@
 
 
 
+
 - - 一共有多少数据
+
 
 
 
@@ -18,7 +16,9 @@
 
 
 
+
 - - 每组数据最大值
+
 
 
 
@@ -26,7 +26,9 @@
 
 
 
+
 - - 每组数据当前数值
+
 
 
 
@@ -34,7 +36,9 @@
 
 
 
+
 - - 每组数据标题
+
 
 
 
@@ -49,7 +53,9 @@
 
 
 
+
 - - 正多边形的所有顶点
+
 
 
 
@@ -57,7 +63,9 @@
 
 
 
+
 - - 每组数据当前数值所在的点
+
 
 
 
@@ -65,7 +73,9 @@
 
 
 
+
 - - 点击每组数据的标题
+
 
 
 
@@ -73,7 +83,9 @@
 
 
 
+
 - Method对象方法
+
 
 
 
@@ -81,7 +93,9 @@
 
 
 
+
 - - - -(void)reloadData;
+
 
 
 
@@ -89,7 +103,9 @@
 
 
 
+
 - - - -(UIButton*)radarItemAtIndex:(NSInteger)index;
+
 
 
 
@@ -102,4 +118,3 @@
  
 
  
-
