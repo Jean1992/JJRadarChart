@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+//总数与当前数结构体
+struct JJRadarChartRankInfo {
+    NSInteger totalNumber; //总数
+    NSInteger currentNumber; //当前数
+};
+typedef struct JJRadarChartRankInfo JJRadarChartRankInfo;
+/**
+ *  快速构造函数
+ *
+ *  @param totalNumber   总数
+ *  @param currentNumber 当前数
+ *
+ *  @return 结构体
+ */
+JJRadarChartRankInfo JJRadarChartRankInfoMake(NSInteger totalNumber, NSInteger currentNumber);
+
 @class JJRadarChart;
 /**
  *  数据源方法(必须实现)
@@ -127,5 +143,7 @@ UIColor* colorRGB(CGFloat r, CGFloat g, CGFloat b);
  *  @return 数值
  */
 - (CGFloat)percentageAtIndex:(NSInteger)index;
+
+- (JJRadarChartRankInfo)rankInfoAtIndex:(NSInteger)index;
 
 @end

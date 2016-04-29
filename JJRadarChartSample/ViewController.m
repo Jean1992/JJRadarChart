@@ -75,8 +75,10 @@ void msg(NSString *message) {
     UIButton *btn = [radarChart radarItemAtIndex:index];
     //取出对应序号当前数值百分比
     CGFloat percentage = [radarChart percentageAtIndex:index];
+    //取出对应序号的总数和当前数
+    JJRadarChartRankInfo info = [radarChart rankInfoAtIndex:index];
     //拼接字符串
-    NSString *msgStr = [NSString stringWithFormat:@"当前%@为%.0f%%", btn.titleLabel.text, percentage];
+    NSString *msgStr = [NSString stringWithFormat:@"最大%@为%zd, 当前%@为%zd, 占%.0f%%", btn.titleLabel.text, info.totalNumber, btn.titleLabel.text, info.currentNumber, percentage];
     //弹窗显示
     msg(msgStr);
 }

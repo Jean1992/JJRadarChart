@@ -8,6 +8,13 @@
 
 #import "JJRadarChart.h"
 
+
+JJRadarChartRankInfo JJRadarChartRankInfoMake(NSInteger totalNumber, NSInteger currentNumber) {
+    JJRadarChartRankInfo info;
+    info.totalNumber = totalNumber;
+    info.currentNumber = currentNumber;
+    return info;
+}
 CGFloat half(CGFloat floatValue) {
     return floatValue * 0.5;
 }
@@ -248,5 +255,10 @@ UIColor* colorRGB(CGFloat r, CGFloat g, CGFloat b) {
     CGFloat maxF = max.floatValue, curF = cur.floatValue;
     CGFloat percentage = curF / maxF * 100;
     return percentage;
+}
+- (JJRadarChartRankInfo)rankInfoAtIndex:(NSInteger)index {
+    NSInteger total = ((NSNumber *)_arrayMaxCounts[index]).integerValue;
+    NSInteger current = ((NSNumber *)_arrayRanks[index]).integerValue;
+    return JJRadarChartRankInfoMake(total, current);
 }
 @end
